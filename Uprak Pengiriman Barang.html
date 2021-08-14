@@ -1,0 +1,27 @@
+<script>
+    var namaPengirim = prompt("Nama Pengirim")
+    var namaPenerima = prompt("Nama Penerima")
+    var jarakPengiriman = prompt("Jarak Pengiriman")
+    var alamatPenerima = prompt("Alamat Penerima")
+    var jenisBarang = prompt("Jenis Barang")
+    var beratBarang = prompt("Berat Barang")
+    
+    var totalBiayaPengiriman = jarakPengiriman * 10000
+    if (totalBiayaPengiriman > 50000){
+        totalBiayaPengiriman = totalBiayaPengiriman * (90/100)
+    }
+    var totalBiayaBeratBarang = beratBarang * 5000
+    if (totalBiayaBeratBarang > 100000){
+        totalBiayaBeratBarang = totalBiayaBeratBarang * (95/100)
+    }
+    var total = totalBiayaBeratBarang + totalBiayaPengiriman
+    alert("Nama Pengirim : " + namaPengirim)
+    alert("Nama Penerima : " + namaPenerima)
+    alert("Jarak Pengiriman : " + jarakPengiriman + " km ")
+    alert("Alamat Penerima : " + alamatPenerima)
+    alert("Jenis Barang : " + jenisBarang)
+    alert("Berat Barang : " + beratBarang + " kg    ")    
+    alert("Total Biaya Pengiriman : Rp " + totalBiayaPengiriman)
+    alert("Total Biaya Berat Barang : Rp " + totalBiayaBeratBarang)
+    alert("Total Keseluruhan : Rp " + total)
+</script>
